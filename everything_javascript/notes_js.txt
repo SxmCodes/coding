@@ -1,0 +1,69 @@
+JavaScript Notes of Namaste Javascript, Akashay Saini.
+
+1) Everything in JavaScript happens inside "EXECUTION CONTEXT". It is like a big container where are 2 blocks, memory block which contains a key:value pair, functions are also stored here only, it is also known as "VARIABLE ENVIORMENT". The other component is known as code component, also known as "THREAD OF EXECUTION", it is executed 1 line at a time.
+
+2) JavaScript is a synchronous single-threaded language.
+NOTE: Single-threaded --> single command at a time.
+      Synchronous Single-threaded --> In a specific order.
+
+3) These have 2 phases.
+      a) 1st phase ----> Memory Creation phase.
+            NOTE: It term of varible, it stores a special thing called undifined.
+                  It term of function, it stores the whole function.
+
+      b) 2nd phase ----> Code Execution phase.
+            NOTE: It replaces undifined with the value of variable. 
+                  In case of functions a new execution context is made in code component. It makes space for varialbles including parameters and same process...
+
+4) If we use arrow functions, it will take that arrow function as a variable.
+
+5) When the global execution context is created, browser will creat a "this" global variable. This is === window object. This is created by default, even if there is no code.
+
+6) Global space is the space which is not inside a function.
+Example :-
+      var a = 10; // This is inside global space, these can be accessed by window.
+      function b()
+      {
+      var x = 100; // This is not inside global space.
+      }
+      console.log(a); // This will print us the value of a.
+      console.log(x); // This will not print as there is no x in global space.
+
+7) Lexical Enviorment --> As the global execution context a lexical enviorment is also created. It's the local memory along with it's parent. Lexical means in a sequence. The orange thing is the reference of the lexical enviorment of it's parent. If c() is kept inside a(), it's parent would be a(), each memory block in global execution context has it's referece to lexical enviorment, in case of global EC, it's pointing to NULL. a() would be pointing to global EC.
+
+8) Scope Chain --> It is the way of finding any variable or function in memory block of each execution context by the help of the reference. If it doesn't find, it will go to next level of scope chain. c() would have access to all the lexical enviorment.
+
+9) Temporal Dead Zone --> It is the time between the undefined and defining the value inside a variable, by let.
+
+10) Let --> We can't access a variale before it's made, we can't even make another variable with the same name.
+
+11) Const --> It's more strict than let. If we declare const b, then try to add some value in it afterwards, it will give us error, but let can do it.
+
+12) Errors ----> 1) Syntax Error --> We had missed any syntax, or if we redeclared  any varialbe.
+
+2) Reference Error --> If JavaScript has declared any variable to seperate space, it will give error as we can't access that.
+
+3) Type Error --> We cannot assign any value after it's declared because of it's type i.e const.
+
+13) Closure ----> A function bind together with it's lexical enviorment.
+// Example :-
+function x() {
+    var a = 7;
+    return function y() {
+        console.log(a);
+    } // Output --> 7, concept of lexical scope.
+}
+var z = x();
+console.log(z);
+z();
+Usage of Closure :-
+      1) Module Design Pattern.
+      2) Currying.
+      3) Functions like once.
+      4) Memoize.
+      5) Maintaining state in async world.
+      6) SetTimeOut.
+      7) Iterator.
+
+14) Types of functions --> 1) Anonymous Function ----> Function without a name.
+                           2) First Class Functions ----> 
