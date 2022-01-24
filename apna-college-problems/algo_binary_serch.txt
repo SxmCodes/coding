@@ -1,0 +1,10 @@
+This is the simple algorithm that will make a binary tree from your preorder, postorder and inorder.
+
+Algorithm:
+1) Pick an element from preorder and create a node.
+2) Increment preorder idx.
+3) Search for picked element's position in inorder.
+4) Call to build left subtree from inorder's 0s to position 1s.
+5) Call to build right subtree from inorder pos+1 to n.
+6) Return the node.
+

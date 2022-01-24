@@ -1,0 +1,117 @@
+{
+  "tabnine.experimentalAutoImports": true,
+  "files.autoSave": "afterDelay",
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.saveFileBeforeRun": true,
+  "editor.formatOnType": true,
+  "editor.mouseWheelZoom": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Consolas",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontFamily": "Monospace",
+  "editor.fontFamily": "DejaVu Sans Mono",
+  "editor.fontFamily": "Space Mono",
+  "editor.fontFamily": "Noto Mono",
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontFamily": "Monaco",
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"editor.fontLigatures":true,
+"explorer.confirmDelete": false,
+"liveServer.settings.donotShowInfoMsg": true,
+"workbench.activityBar.visible": true,
+"workbench.editor.enablePreview": true,
+"[cpp]": {
+  "editor.defaultFormatter": "ms-vscode.cpptools"
+},
+"highlight.regexes": {
+  "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+    "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+    "decorations": [
+      {
+        "overviewRulerColor": "#ffcc00",
+        "backgroundColor": "#ffcc00",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#ffcc00",
+        "color": "#1f1f1f"
+      }
+    ]
+  },
+  "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+    "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+    "decorations": [
+      {
+        "overviewRulerColor": "#cc0000",
+        "backgroundColor": "#cc0000",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#cc0000",
+        "color": "#1f1f1f"
+      }
+    ]
+  },
+  "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+    "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+    "decorations": [
+      {
+        "overviewRulerColor": "#00ccff",
+        "backgroundColor": "#00ccff",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#00ccff",
+        "color": "#1f1f1f"
+      }
+    ]
+  },
+  "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+    "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+    "decorations": [
+      {
+        "overviewRulerColor": "#cc00cc",
+        "backgroundColor": "#cc00cc",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#cc00cc",
+        "color": "#1f1f1f"
+      }
+    ]
+  }
+},
+"todohighlight.isEnable": true,
+"explorer.confirmDragAndDrop": false,
+"[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"files.exclude": {
+  "**/.classpath": true,
+  "**/.project": true,
+  "**/.settings": true,
+  "**/.factorypath": true
+},
+"workbench.iconTheme": "material-icon-theme",
+"emmet.includeLanguages": {
+  "javascript": "javascriptreact",
+  "django-html": "html"
+},
+"window.zoomLevel": 1,
+"[python]": {
+  "editor.defaultFormatter": "ms-python.python"
+},
+"workbench.colorTheme": "One Dark Pro Darker",
+}

@@ -1,0 +1,125 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// Intro.
+	"C++ Boil Code.": {
+		"prefix": "cpp",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"  ",
+			"int main() { ",
+			" ",
+			"  return 0;",
+			"}"
+		],
+		"description": "Cpp Boil Code."
+	}
+	"C++ Boil Code.": {
+		"prefix": "llist",
+		"body": [
+			"node *head = NULL;",
+    "// Putting the values to it.",
+    "insertAtTail(head, 1);",
+    "insertAtTail(head, 2);",
+    "insertAtTail(head, 3);",
+    "insertAtTail(head, 4);",
+    "insertAtTail(head, 5);",
+		],
+		"description": "Cpp Boil Code."
+	}
+	"Linked List tail Code.": {
+		"prefix": "instail",
+		"body": [
+			"void insertAtTail(node *&head, int val)",
+"{",
+    "node *n = new node(val);",
+    "if (head == NULL)",
+    "{",
+        "head = n;",
+        "return;",
+    "}",
+    "node *temp = head;",
+    "while (temp->next != NULL)",
+    "{",
+        "temp = temp->next;",
+    "}",
+    "temp->next = n;",
+"}",
+		],
+		"description": "Cpp Boil Code."
+	}
+	// Insert Linked List code.
+	"Linked List Insert Code.": {
+		"prefix": "inshead",
+		"body": [
+			"void insertionAtHead(node *&head, int val)",
+"{",
+    "node *n = new node(val);",
+    "n->next = head;",
+    "head = n;",
+"}",
+		],
+		"description": "Cpp Boil Code."
+	}
+	"Linked List Display Code.": {
+		"prefix": "ldisplay",
+		"body": [
+		"void display(node *head)",
+"{",
+    "node *temp = head;",
+    "while (temp != NULL)",
+    "{",
+        "cout << temp->data << " ";",
+        "temp = temp->next;",
+    "}",
+    "cout << endl;",
+"}",
+		],
+		"description": "Cpp Display"
+	}
+	// Binary Trees.
+	"Binary Tree Boil Code.": {
+		"prefix": "tnode",
+		"body": [
+			"struct Node* root = new Node(1);",
+			"root->left = new Node(2);",
+			"root->right = new Node(3);",
+			"root->left->left = new Node(4);",
+			"root->left->right = new Node(5)",
+			"root->right->left = new Node(6);",
+			"root->right->right = new Node(7);",
+		],
+		"description": "Binary Tree Boil Code."
+	}
+	// Linked List.
+	"Linked List Boil Code.": {
+		"prefix": "lnode",
+		"body": [
+		"class node",
+"{",
+"public:",
+    "int data;",
+    "node *next;",
+
+    "node(int val)",
+    "{",
+        "data = val;",
+        "next = NULL;",
+    "}",
+"};",
+		],
+		"description": "Linked List Boil Code."
+	}
+	// I have to make more snippets for arrays.
+}
